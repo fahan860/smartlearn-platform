@@ -1,0 +1,3 @@
+-r ml-service/requirements.txt
+-r simulator/requirements.txt
+-r spark/requirements.txt

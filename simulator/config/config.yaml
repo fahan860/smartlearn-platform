@@ -1,0 +1,114 @@
+# Smart Learning Platform - Data Generator Configuration
+# Phase 1: Data Generation Parameters
+
+# Database Configuration
+database:
+  mongodb_uri: "mongodb://localhost:27017"
+  db_name: "smart_learning"
+  
+# Generation Parameters
+generation:
+  # Number of entities to generate
+  num_users: 1200
+  num_courses: 150
+  num_interactions: 15000
+  
+  # User distribution (must sum to 1.0)
+  user_types:
+    beginner: 0.40      # 40% beginners
+    intermediate: 0.35  # 35% intermediate
+    advanced: 0.25      # 25% advanced
+  
+  # Course distribution
+  course_levels:
+    beginner: 0.45      # 45% beginner courses
+    intermediate: 0.35  # 35% intermediate courses
+    advanced: 0.20      # 20% advanced courses
+  
+  # Interaction patterns (probabilities)
+  interaction_weights:
+    view: 1.0           # All users view courses
+    enroll: 0.3         # 30% of views lead to enrollment
+    progress: 0.7       # 70% of enrollments show progress
+    complete: 0.4       # 40% of progressed courses completed
+  
+  # Content categories and topics
+  categories:
+    - name: "Programming"
+      weight: 0.25
+      topics:
+        - "Python"
+        - "JavaScript"
+        - "Java"
+        - "C++"
+        - "Go"
+        - "Rust"
+        - "TypeScript"
+        
+    - name: "Data Science"
+      weight: 0.20
+      topics:
+        - "Machine Learning"
+        - "Deep Learning"
+        - "Data Analysis"
+        - "Statistics"
+        - "Data Visualization"
+        - "Big Data"
+        
+    - name: "Web Development"
+      weight: 0.20
+      topics:
+        - "React"
+        - "Angular"
+        - "Vue.js"
+        - "Node.js"
+        - "HTML/CSS"
+        - "REST APIs"
+        - "GraphQL"
+        
+    - name: "Cloud & DevOps"
+      weight: 0.15
+      topics:
+        - "AWS"
+        - "Azure"
+        - "Docker"
+        - "Kubernetes"
+        - "CI/CD"
+        - "Terraform"
+        
+    - name: "Mobile Development"
+      weight: 0.10
+      topics:
+        - "React Native"
+        - "Flutter"
+        - "iOS Development"
+        - "Android Development"
+        
+    - name: "Cybersecurity"
+      weight: 0.10
+      topics:
+        - "Network Security"
+        - "Ethical Hacking"
+        - "Cryptography"
+        - "Security Auditing"
+
+# Output Configuration
+output:
+  base_path: "data"
+  formats:
+    - "json"    # JSON format for MongoDB import
+    - "csv"     # CSV format for analysis/Spark
+  
+  paths:
+    raw_courses: "data/raw/courses"
+    raw_users: "data/raw/users"
+    raw_interactions: "data/raw/interactions"
+    processed: "data/processed"
+
+# Seed for reproducibility (set to null for random)
+random_seed: 42
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "simulator/logs/data_generation.log"

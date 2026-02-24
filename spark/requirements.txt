@@ -1,0 +1,17 @@
+# Requirements pour Spark Jobs
+# Phase 2: Feature Engineering & ETL
+
+# Spark
+pyspark==3.5.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# MySQL Connector
+mysql-connector-python>=8.2.0
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2023.3
+tqdm>=4.66.0
