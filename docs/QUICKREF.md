@@ -202,4 +202,4 @@ cp .env.example .env
 
 ---
 
-**Quick Reference for LearnHub Platform** 📚
+**Quick Reference — SmartLearn Platform**

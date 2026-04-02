@@ -26,6 +26,7 @@ ENV/
 .env
 .env.*
 !.env.docker.example
+!.env.example
 
 # Jupyter
 notebooks/.ipynb_checkpoints/
@@ -56,6 +57,8 @@ docker-data/
 # Generated data artifacts (keep structure)
 data/output/
 data/processed/
+data/raw/
+data/generation_summary_*.json
 
 # ML artifacts
 *.pkl
@@ -66,62 +69,7 @@ data/processed/
 backend/dist/
 frontend/dist/
 
-# Raw data
-data/raw/
-
-# Misc
-COMPLETION_SUMMARY.txt
-SUMMARY_VISUAL.txt
-PHASE1_*.md
-README_PHASE1.md
-
-# Generated data
-data/raw/
-data/generation_summary_*.json
-
-# Build artifacts
-backend/dist/
-frontend/dist/
-
-# Redundant docs
-COMPLETION_SUMMARY.txt
-SUMMARY_VISUAL.txt
-PHASE1_EXECUTION_REPORT.md
-PHASE1_INDEX.md
-PHASE1_MANIFEST.md
-PHASE1_QUICKSTART.md
-README_PHASE1.md
-data/raw/
-data/generation_summary_*.json
-backend/dist/
-frontend/dist/
-COMPLETION_SUMMARY.txt
-SUMMARY_VISUAL.txt
-PHASE1_*.md
-README_PHASE1.md
-# Generated data
-data/raw/
-data/generation_summary_*.json
-
-# Build artifacts
-backend/dist/
-frontend/dist/
-
-# Redundant docs
-COMPLETION_SUMMARY.txt
-SUMMARY_VISUAL.txt
-PHASE1_*.md
-README_PHASE1.md
-
-# Generated data
-data/raw/
-data/generation_summary_*.json
-
-# Build artifacts
-backend/dist/
-frontend/dist/
-
-# Redundant docs
+# Misc generated files
 COMPLETION_SUMMARY.txt
 SUMMARY_VISUAL.txt
 PHASE1_*.md

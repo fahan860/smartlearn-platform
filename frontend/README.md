@@ -1,6 +1,6 @@
-# LearnHub Frontend
+# SmartLearn Frontend
 
-Modern, professional React + TypeScript frontend for the LearnHub learning recommendation platform.
+Modern React + TypeScript frontend for the SmartLearn personalized learning platform.
 
 ## Features
 
