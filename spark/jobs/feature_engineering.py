@@ -62,7 +62,7 @@ class CanonicalEntityJob:
     def build_users(self) -> DataFrame:
         users = self.users_df.select(
             col("_id").alias("id"),
-            concat_ws(" ", col("profile.firstName"), col("profile.lastName")).alias("name"),
+            concat_ws(" ", col("`profile.firstName`"), col("`profile.lastName`")).alias("name"),
             col("email"),
             col("password").alias("password_hash"),
             to_timestamp(col("createdAt")).alias("created_at"),
@@ -77,7 +77,7 @@ class CanonicalEntityJob:
             col("description"),
             col("level"),
             to_json(tags_array).alias("tags_json"),
-            col("content.duration").cast("int").alias("duration_minutes"),
+            col("`content.duration`").cast("int").alias("duration_minutes"),
             to_timestamp(col("createdAt")).alias("created_at"),
         )
         return courses

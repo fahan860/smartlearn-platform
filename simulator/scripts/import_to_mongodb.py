@@ -173,7 +173,7 @@ def main():
     )
     parser.add_argument(
         '--data-dir',
-        default='data/raw',
+        default='../data/raw',
         help='Path to generated data directory'
     )
     parser.add_argument(

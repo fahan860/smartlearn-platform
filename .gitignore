@@ -74,3 +74,12 @@ COMPLETION_SUMMARY.txt
 SUMMARY_VISUAL.txt
 PHASE1_*.md
 README_PHASE1.md
+simulator/src/data/ 
+spark/data/ 
+fix_users.py 
+fix_courses.py 
+check_reco_event.py 
+mongo_inspect.py 
+mongo_pick_ids.py 
+mongo_test.py 
+mes_fichiers.txt 

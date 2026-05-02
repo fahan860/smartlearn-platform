@@ -61,8 +61,10 @@ services:
     container_name: smartlearn-ml-service
     environment:
       MODEL_PATH: /app/models/recommender.pkl
+      MONGODB_URI: mongodb://mongo:27017/learning
+      MONGO_DB: learning
     volumes:
-      - ./ml-service/models:/app/models:ro
+      - ./ml-service/models:/app/models
     ports:
       - "8001:8001"
     healthcheck:
