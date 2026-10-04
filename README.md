@@ -1,5 +1,9 @@
 # SmartLearn Platform
 
+[![Live demo](https://img.shields.io/badge/Live%20demo-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://fahan-smartlearn.streamlit.app) [![Portfolio](https://img.shields.io/badge/Portfolio-case%20study-0ea5e9)](https://fatima-zahrae-ahannuk.vercel.app/projects/smartlearn)
+
+> 👉 **Live demo** of the recommendation engine (embeddings): https://fahan-smartlearn.streamlit.app · **Case study**: https://fatima-zahrae-ahannuk.vercel.app/projects/smartlearn
+
 A full-stack personalized learning platform that combines a TypeScript REST API, a React web interface, a Python ML inference service, a synthetic data simulator, and a Spark/Pandas ETL pipeline — all orchestrated with Docker Compose.
 
 > **Demo credentials** (after `docker-compose up --build`): `demo@example.com` / `Password123!`
